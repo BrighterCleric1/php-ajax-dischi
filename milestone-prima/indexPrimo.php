@@ -14,7 +14,6 @@
 require_once __DIR__ . "/../database/database.php";
 ?>
     <header>
-    <img src="" alt="">
     </header>
     <main>
         <div class="container">
