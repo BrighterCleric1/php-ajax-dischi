@@ -7,9 +7,9 @@ new Vue(
             discs: []
         },
         created() {
-            axios.get("http://localhost/repo-boolean-php/php-ajax-dischi/api/api.php")
+            axios.get('http://localhost/repo-boolean-php/php-ajax-dischi/api/api.php')
                 .then((response) => {
-                    console.log(response)
+                    this.discs = response.data
                 })
         }
     }
