@@ -2,3 +2,39 @@ header {
     height: 100px;
     background-color: #2e3a46;
 }
+
+main {
+    height: 100%;
+    background: #1e2d3b;
+    padding-top: 100px;
+}
+
+.album {
+    height: 400px;
+}
+
+.inner{
+    height: 90%;
+    background-color: #2e3a46;
+    padding: 35px;
+}
+
+.album-img img{
+    width: 100%;
+}
+
+.details{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.title{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.author, .year{
+    color: #777268;
+}

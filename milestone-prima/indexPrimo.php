@@ -11,17 +11,34 @@
 <body>
 
 <?php
-require_once __DIR__ . "../database/database.php";
+require_once __DIR__ . "/../database/database.php";
 ?>
     <header>
-        <div>
-            <?php
-                foreach($database as $album) {
-                    echo $album['title'];
-                }
-            ?>
-        </div>
+    <img src="" alt="">
     </header>
+    <main>
+        <div class="container">
+            <div class="row row-cols-5">
+                <?php 
+                    foreach ($database as $album) { ?>
+                        <div class="col album">
+                            <div class="inner">
+                                <div class="album-img">
+                                    <img src="<?php echo "{$album['poster']}"?>" alt="">
+                                </div>
+                                <div class="details">
+                                    <div class="title"><?php echo $album['title'] ?></div>
+                                    <div class="author"><?php echo $album['author'] ?></div>
+                                    <div class="year"><?php echo $album['year'] ?></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                <?php  } ?>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
